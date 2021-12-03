@@ -42,12 +42,12 @@ button {
 strong {
   font-weight: 600;
 }
-body {
+/* body {
   height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 .container {
   width: 100%;
   max-width: 1200px;
