@@ -6,15 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/swiper-bundle.min.css">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri() ?>/css/app.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightgallery/2.3.0/css/lightgallery-bundle.min.css">
     <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
-    <title><?php wp_title(' | ', true, 'right'); ?> <?php bloginfo('name'); ?></title>
+    <title><?php wp_title(); ?></title>
     <?php wp_deregister_script( 'jquery' ); ?>
     <?php wp_head(); ?>
 </head>
 <body>
 <header>
     <div class="container header-container">
-        <a class="logo" href="/">Бизнес-комплекс на русаковской</a>
+        <a class="logo" href="/">Бизнес-комплекс на Русаковской</a>
         <nav class="header-nav" itemscope itemtype="http://schema.org/SiteNavigationElement">
             <a href="#office-list" itemprop="url" class="header-nav-elem">
                 <span itemprop="name" class="header-nav-text">Аренда офиса</span>

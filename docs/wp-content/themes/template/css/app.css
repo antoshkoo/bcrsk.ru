@@ -3,12 +3,13 @@
   --white-color: #ffffff;
   --black-color: #030303;
   --header-font: "Days", sans-serif;
-  --hr-w: 75px;
-  --hr-h: 75px;
+  --hr-w: 100px;
+  --hr-h: 100px;
   --filter-white: invert(100%) sepia(100%) saturate(0%) hue-rotate(119deg)
     brightness(106%) contrast(107%);
-  --filter-black: invert(0%) sepia(15%) saturate(20%) hue-rotate(6deg)
-    brightness(93%) contrast(98%);
+  --filter-black: #682426;
+  /* --filter-black: invert(0%) sepia(15%) saturate(20%) hue-rotate(6deg)
+    brightness(93%) contrast(98%); */
   --filter-theme: invert(12%) sepia(92%) saturate(1652%) hue-rotate(335deg)
     brightness(86%) contrast(86%);
 }
@@ -345,7 +346,7 @@ footer * {
   margin: auto auto;
   width: var(--hr-w);
   height: var(--hr-h);
-  border: 1px solid #682426;
+  /* border: 1px solid #682426; */
   background-image: url(../images/logo-icon.svg);
   background-size: calc(var(--hr-w) * 0.5);
   background-position: center;
@@ -358,13 +359,14 @@ footer * {
   bottom: 10px;
   left: 10px;
   right: 10px;
-  border: 1px solid #682426;
+  /* border: 1px solid #682426; */
 }
 .filter-white {
   filter: var(--filter-white);
 }
 .filter-black {
   filter: var(--filter-black);
+  position: relative;
 }
 .filter-theme {
   filter: var(--filter-theme);
@@ -2357,4 +2359,7 @@ button.modal-form-button {
   .swiper-button-prev {
     display: none;
   }
+}
+.thumbnail-item {
+  cursor: pointer;
 }

@@ -14,7 +14,7 @@
                     <div class="footer-folder-main-contact" itemprop="email"><a href="mailto:info@bcrsk.ru">info@bcrsk.ru</a></div>
                 </div>
             </div>
-            <div class="hr filter-white"><div></div></div>
+            <!-- <div class="hr filter-white"><div></div></div> -->
         </div>
     </footer>
     <section id="modals">
@@ -39,6 +39,7 @@
     </section>
         <script src="https://api-maps.yandex.ru/2.1/?apikey=1a62ef6e-4c38-4d02-84ec-ff7cf5082432&lang=ru_RU" type="text/javascript"></script>
         <script src="<?php echo get_template_directory_uri() ?>/js/swiper-bundle.min.js"></script>
+        <script src="<?php echo get_template_directory_uri() ?>/js/lightgallery.umd.min.js"></script>
         <script>
              let swiper = new Swiper(".swiper-clients", {
                 slidesPerView: 5,
@@ -101,6 +102,14 @@
                 } else {
                     console.log('Something wrong')
                 }
+            });
+            lightGallery(document.getElementById('office-list'), {
+                selector: '.thumbnail-item',
+                controls: false,
+                animateThumb: false,
+                zoomFromOrigin: false,
+                allowMediaOverlap: true,
+                toggleThumb: true,
             });
 
         </script>
